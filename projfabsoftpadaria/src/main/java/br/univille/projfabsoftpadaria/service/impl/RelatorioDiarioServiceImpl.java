@@ -25,4 +25,16 @@ public class RelatorioDiarioServiceImpl implements RelatorioDiarioService {
     public RelatorioDiario getByData(LocalDate data) {
         return relatorioDiarioRepository.findByData(data);
     }
+
+    @Override
+    public RelatorioDiario delete(long id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'delete'");
+    }
+
+    @Override
+    public RelatorioDiario save(RelatorioDiario relatorioDiario) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'save'");
+    }
 }

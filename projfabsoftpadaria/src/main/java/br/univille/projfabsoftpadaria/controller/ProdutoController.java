@@ -3,8 +3,6 @@ package br.univille.projfabsoftpadaria.controller;
 import br.univille.projfabsoftpadaria.entity.Produto;
 import br.univille.projfabsoftpadaria.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,57 +14,24 @@ public class ProdutoController {
     @Autowired
     private ProdutoService produtoService;
 
-    // Endpoint para listar todos os produtos
     @GetMapping
-    public ResponseEntity<List<Produto>> getAllProdutos() {
-        List<Produto> produtos = produtoService.getAll();
-        return new ResponseEntity<>(produtos, HttpStatus.OK);
+    public List<Produto> getAll() {
+        return produtoService.getAll();
     }
 
-    // Endpoint para criar um novo produto
     @PostMapping
-    public ResponseEntity<Produto> createProduto(@RequestBody Produto produto) {
-        if (produto == null) {
-            return ResponseEntity.badRequest().build();
-        }
-        produtoService.save(produto);
-        return new ResponseEntity<>(produto, HttpStatus.CREATED);
+    public Produto save(@RequestBody Produto produto) {
+        return produtoService.save(produto);
     }
 
-    // Endpoint para atualizar um produto
     @PutMapping("/{id}")
-    public ResponseEntity<Produto> updateProduto(@PathVariable long id, @RequestBody Produto produto) {
-        if (id <= 0 || produto == null) {
-            return ResponseEntity.badRequest().build();
-        }
-
-        Produto existingProduto = produtoService.getById(id);
-        if (existingProduto == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        existingProduto.setNome(produto.getNome());
-        existingProduto.setDescricao(produto.getDescricao());
-        existingProduto.setPreco(produto.getPreco());
-        existingProduto.setQuantidadeEstoque(produto.getQuantidadeEstoque());
-
-        produtoService.save(existingProduto);
-        return new ResponseEntity<>(existingProduto, HttpStatus.OK);
+    public Produto update(@PathVariable long id, @RequestBody Produto produto) {
+        produto.setId(id);
+        return produtoService.save(produto);
     }
 
-    // Endpoint para deletar um produto
     @DeleteMapping("/{id}")
-    public ResponseEntity<Produto> deleteProduto(@PathVariable long id) {
-        if (id <= 0) {
-            return ResponseEntity.badRequest().build();
-        }
-
-        Produto produto = produtoService.getById(id);
-        if (produto == null) {
-            return ResponseEntity.notFound().build();
-        }
-
-        produtoService.delete(id);
-        return new ResponseEntity<>(produto, HttpStatus.OK);
+    public boolean delete(@PathVariable long id) {
+        return produtoService.delete(id);
     }
 }

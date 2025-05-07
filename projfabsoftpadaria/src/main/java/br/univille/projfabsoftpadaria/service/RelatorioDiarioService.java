@@ -12,4 +12,8 @@ public interface RelatorioDiarioService {
 
     // Método para obter um relatório específico por data
     RelatorioDiario getByData(LocalDate data);
+
+    RelatorioDiario delete(long id);
+
+    RelatorioDiario save(RelatorioDiario relatorioDiario);
 }

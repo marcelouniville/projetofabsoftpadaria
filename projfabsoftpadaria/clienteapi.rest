@@ -1,31 +1,228 @@
 ### API CLIENTE GET
 GET http://localhost:8080/api/v1/clientes
 
-### API CLIENTE POST
+### API CLIENTE POST 1
 POST http://localhost:8080/api/v1/clientes
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "dataNascimento": "2025-05-01",
-    "endereco": "rua das pika",
-    "nome": "zezinho",
-    "email": "zeze@gmail.com",
-   "telefone": "6969-6969"
-
+    "dataNascimento": "1990-07-15",
+    "endereco": "Av. Brasil, 1000",
+    "nome": "Carlos Silva",
+    "email": "carlos.silva@gmail.com",
+    "telefone": "1234-5678"
 }
 
-### API CLIENTE PUT
+### API CLIENTE POST 2
+POST http://localhost:8080/api/v1/clientes
+Content-Type: application/json
+
+{
+    "dataNascimento": "1992-11-25",
+    "endereco": "Rua da Paz, 202",
+    "nome": "Ana Pereira",
+    "email": "ana.pereira@yahoo.com",
+    "telefone": "9876-5432"
+}
+
+### API CLIENTE POST 3
+POST http://localhost:8080/api/v1/clientes
+Content-Type: application/json
+
+{
+    "dataNascimento": "1985-03-09",
+    "endereco": "Rua das Flores, 50",
+    "nome": "Marcos Souza",
+    "email": "marcos.souza@hotmail.com",
+    "telefone": "9988-7766"
+}
+
+### API CLIENTE PUT 1
 PUT http://localhost:8080/api/v1/clientes/1
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "dataNascimento": "2025-05-01",
-    "endereco": "rua das pika",
-    "nome": "zezinho da silva sauro",
-    "email": "zeze@gmail.com",
-   "telefone": "6969-6969"
-
+    "dataNascimento": "1990-07-15",
+    "endereco": "Av. Brasil, 1000",
+    "nome": "Carlos Silva Santos",
+    "email": "carlos.silva@gmail.com",
+    "telefone": "1234-5678"
 }
 
-### API CLIENTE DELETE
+### API CLIENTE PUT 2
+PUT http://localhost:8080/api/v1/clientes/2
+Content-Type: application/json
+
+{
+    "dataNascimento": "1992-11-25",
+    "endereco": "Rua da Paz, 202",
+    "nome": "Ana Pereira Lima",
+    "email": "ana.pereira@yahoo.com",
+    "telefone": "9876-5432"
+}
+
+### API CLIENTE PUT 3
+PUT http://localhost:8080/api/v1/clientes/3
+Content-Type: application/json
+
+{
+    "dataNascimento": "1985-03-09",
+    "endereco": "Rua das Flores, 50",
+    "nome": "Marcos Souza Oliveira",
+    "email": "marcos.souza@hotmail.com",
+    "telefone": "9988-7766"
+}
+
+### API CLIENTE DELETE 1
 DELETE http://localhost:8080/api/v1/clientes/1
+
+### API CLIENTE DELETE 2
+DELETE http://localhost:8080/api/v1/clientes/2
+
+### API CLIENTE DELETE 3
+DELETE http://localhost:8080/api/v1/clientes/3
+
+### API PRODUTO GET
+GET http://localhost:8080/api/v1/produtos
+
+### API PRODUTO POST 1
+POST http://localhost:8080/api/v1/produtos
+Content-Type: application/json
+
+{
+    "nome": "Pão Francês",
+    "descricao": "Pãozinho crocante",
+    "preco": 1.50
+}
+
+### API PRODUTO POST 2
+POST http://localhost:8080/api/v1/produtos
+Content-Type: application/json
+
+{
+    "nome": "Coxinha",
+    "descricao": "Coxinha de frango com catupiry",
+    "preco": 3.00
+}
+
+### API PRODUTO POST 3
+POST http://localhost:8080/api/v1/produtos
+Content-Type: application/json
+
+{
+    "nome": "Bolo de Chocolate",
+    "descricao": "Bolo de chocolate com cobertura de brigadeiro",
+    "preco": 5.00
+}
+
+### API PRODUTO PUT 1
+PUT http://localhost:8080/api/v1/produtos/1
+Content-Type: application/json
+
+{
+    "nome": "Pão Francês Recheado",
+    "descricao": "Pãozinho crocante recheado com presunto e queijo",
+    "preco": 2.00
+}
+
+### API PRODUTO PUT 2
+PUT http://localhost:8080/api/v1/produtos/2
+Content-Type: application/json
+
+{
+    "nome": "Coxinha de Frango",
+    "descricao": "Coxinha de frango desfiado",
+    "preco": 3.50
+}
+
+### API PRODUTO PUT 3
+PUT http://localhost:8080/api/v1/produtos/3
+Content-Type: application/json
+
+{
+    "nome": "Bolo de Chocolate Trufado",
+    "descricao": "Bolo de chocolate com trufa de chocolate belga",
+    "preco": 6.00
+}
+
+### API PRODUTO DELETE 1
+DELETE http://localhost:8080/api/v1/produtos/1
+
+### API PRODUTO DELETE 2
+DELETE http://localhost:8080/api/v1/produtos/2
+
+### API PRODUTO DELETE 3
+DELETE http://localhost:8080/api/v1/produtos/3
+
+### API PEDIDO GET
+GET http://localhost:8080/api/v1/pedidos
+
+### API PEDIDO POST 1
+POST http://localhost:8080/api/v1/pedidos
+Content-Type: application/json
+
+{
+    "clienteId": 1,
+    "dataPedido": "2025-05-01",
+    "total": 20.00
+}
+
+### API PEDIDO POST 2
+POST http://localhost:8080/api/v1/pedidos
+Content-Type: application/json
+
+{
+    "clienteId": 2,
+    "dataPedido": "2025-05-02",
+    "total": 30.00
+}
+
+### API PEDIDO POST 3
+POST http://localhost:8080/api/v1/pedidos
+Content-Type: application/json
+
+{
+    "clienteId": 3,
+    "dataPedido": "2025-05-03",
+    "total": 50.00
+}
+
+### API PEDIDO PUT 1
+PUT http://localhost:8080/api/v1/pedidos/1
+Content-Type: application/json
+
+{
+    "clienteId": 1,
+    "dataPedido": "2025-05-01",
+    "total": 25.00
+}
+
+### API PEDIDO PUT 2
+PUT http://localhost:8080/api/v1/pedidos/2
+Content-Type: application/json
+
+{
+    "clienteId": 2,
+    "dataPedido": "2025-05-02",
+    "total": 35.00
+}
+
+### API PEDIDO PUT 3
+PUT http://localhost:8080/api/v1/pedidos/3
+Content-Type: application/json
+
+{
+    "clienteId": 3,
+    "dataPedido": "2025-05-03",
+    "total": 55.00
+}
+
+### API PEDIDO DELETE 1
+DELETE http://localhost:8080/api/v1/pedidos/1
+
+### API PEDIDO DELETE 2
+DELETE http://localhost:8080/api/v1/pedidos/2
+
+### API PEDIDO DELETE 3
+DELETE http://localhost:8080/api/v1/pedidos/3
+
