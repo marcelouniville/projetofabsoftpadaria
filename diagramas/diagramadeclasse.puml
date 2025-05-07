@@ -1,0 +1,67 @@
+@startuml
+package br.univille.projfabsoftpadaria.entity {
+
+    class Cliente {
+        - long id
+        - String nome
+        - String endereco
+        - String telefone
+        - String email
+        - Date dataNascimento
+    }
+
+    class Produto {
+        - Long id
+        - String nome
+        - String descricao
+        - Double preco
+        - Integer quantidadeEstoque
+    }
+
+    class Estoque {
+        - Long id
+        - Produto produto
+        - Integer quantidade
+    }
+
+    class ItemVenda {
+        - Long id
+        - int quantidade
+        - double precoUnitario
+        - Produto produto
+        - Venda venda
+    }
+
+    class Venda {
+        - Long id
+        - LocalDate data
+        - List<ItemVenda> itens
+        - RelatorioDiario relatorioDiario
+    }
+
+    class Pedido {
+        - Long id
+        - List<Produto> produtos
+        - LocalDateTime horarioRetirada
+    }
+
+    class RelatorioDiario {
+        - Long id
+        - LocalDate data
+        - Integer quantidadeVendida
+        - Double lucro
+        - List<Venda> vendas
+    }
+
+    
+    ItemVenda --> Produto : contém >
+    ItemVenda --> Venda : pertence >
+    Venda --> ItemVenda : possui >
+    Venda --> RelatorioDiario : pertence >
+    RelatorioDiario --> Venda : inclui >
+    Estoque --> Produto : refere >
+    Pedido --> Produto : inclui >
+
+}
+@enduml
+
