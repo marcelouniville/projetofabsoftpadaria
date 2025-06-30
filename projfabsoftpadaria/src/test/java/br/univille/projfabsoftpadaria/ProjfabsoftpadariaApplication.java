@@ -9,4 +9,5 @@ public class ProjfabsoftpadariaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProjfabsoftpadariaApplication.class, args);
 	}
+
 }
