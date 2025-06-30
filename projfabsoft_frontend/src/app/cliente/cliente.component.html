@@ -1,0 +1,25 @@
+<main class="container">
+    <h2>Clientes</h2>
+    <table class="table">
+        <thead> 
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Endereco</th>
+                <th>dataNascimento</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let umCliente of listaClientes">
+                <td>{{ umCliente.nome}}</td>
+                <td>{{ umCliente.email }}</td>
+                <td>{{ umCliente.telefone }}</td>
+                <td>{{ umCliente.endereco }}</td>
+                <td>{{ umCliente.dataNascimento | date: 'dd/MM/yyyy' }}</td>
+            </tr>
+        </tbody> 
+
+
+    </table>
+</main>

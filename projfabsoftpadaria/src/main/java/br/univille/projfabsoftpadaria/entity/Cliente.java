@@ -18,7 +18,6 @@ public class Cliente {
 
     @Column(length = 1000, nullable = false)
     private String nome;
-
     private String endereco;
     private String telefone;
     private String email;
