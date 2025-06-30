@@ -1,0 +1,43 @@
+<main class="container">
+    <h2>Cliente</h2>
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="txtNome">Nome</label>
+                <input type="text" [(ngModel)]="cliente.nome" 
+                class="form-control" id="txtNome">
+            </div>
+
+            <div class="form-group">
+                <label for="txtEndereco">Endereço</label>
+                <input type="currency" [(ngModel)]="cliente.endereco" 
+                class="form-control" id="txtEndereco">
+            </div>
+
+            <div class="form-group">
+                <label for="txtTelefone">Telefone</label>
+                <input type="text" [(ngModel)]="cliente.telefone" 
+                class="form-control" id="txtTelefone">
+            </div>
+
+            <div class="form-group">
+                <label for="txtEmail">E-mail</label>
+                <input type="text" [(ngModel)]="cliente.email" 
+                class="form-control" id="txtEmail">
+            </div>
+
+            <div class="form-group">
+                <label for="txtDataNascimento">Data Nascimento</label>
+                <input type="date" [(ngModel)]="cliente.dataNascimento" 
+                class="form-control" id="txtDataNascimento">
+            </div>
+        </div>
+
+    <a [routerLink]="['/clientes']" class="btn btn-secondary" style="margin-right: 8px;">
+  Voltar
+</a>
+
+<button (click)="salvar()" class="btn btn-primary">Salvar</button>
+
+    </div>
+</main>

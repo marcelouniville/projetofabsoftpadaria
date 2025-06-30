@@ -1,7 +1,31 @@
-C:\Users\marce\OneDrive\Área de Trabalho\FABSOFT-2025\projfabsoftpadaria\src\main\java\br\univille\projfabsoftpadaria\entity\Cliente.java
-C:\Users\marce\OneDrive\Área de Trabalho\FABSOFT-2025\projfabsoftpadaria\src\main\java\br\univille\projfabsoftpadaria\entity\ItemVenda.java
-C:\Users\marce\OneDrive\Área de Trabalho\FABSOFT-2025\projfabsoftpadaria\src\main\java\br\univille\projfabsoftpadaria\entity\Pedido.java
-C:\Users\marce\OneDrive\Área de Trabalho\FABSOFT-2025\projfabsoftpadaria\src\main\java\br\univille\projfabsoftpadaria\entity\Produto.java
-C:\Users\marce\OneDrive\Área de Trabalho\FABSOFT-2025\projfabsoftpadaria\src\main\java\br\univille\projfabsoftpadaria\entity\RelatorioDiario.java
-C:\Users\marce\OneDrive\Área de Trabalho\FABSOFT-2025\projfabsoftpadaria\src\main\java\br\univille\projfabsoftpadaria\entity\Venda.java
-C:\Users\marce\OneDrive\Área de Trabalho\FABSOFT-2025\projfabsoftpadaria\src\main\java\br\univille\projfabsoftpadaria\ProjfabsoftpadariaApplication.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/ProjfabsoftpadariaApplication.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/controller/ClienteController.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/controller/ItemVendaController.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/controller/PedidoController.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/controller/ProdutoController.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/controller/RelatorioDiarioController.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/controller/VendaController.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/entity/Cliente.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/entity/ItemVenda.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/entity/Pedido.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/entity/Produto.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/entity/RelatorioDiario.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/entity/Venda.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/repository/ClienteRepository.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/repository/ItemVendaRepository.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/repository/PedidoRepository.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/repository/ProdutoRepository.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/repository/RelatorioDiarioRepository.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/repository/VendaRepository.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/ClienteService.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/ItemVendaService.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/PedidoService.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/ProdutoService.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/RelatorioDiarioService.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/VendaService.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/impl/ClienteServiceImpl.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/impl/ItemVendaServiceImpl.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/impl/PedidoServiceImpl.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/impl/ProdutoServiceImpl.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/impl/RelatorioDiarioServiceImpl.java
+/workspaces/projetofabsoftpadaria/projfabsoftpadaria/src/main/java/br/univille/projfabsoftpadaria/service/impl/VendaServiceImpl.java

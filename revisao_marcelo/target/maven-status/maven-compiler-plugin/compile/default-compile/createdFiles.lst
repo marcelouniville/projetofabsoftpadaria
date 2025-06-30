@@ -1,0 +1,6 @@
+br/univille/entity/Cidade.class
+br/univille/view/FormPessoa.class
+br/univille/controller/ControllerPessoa.class
+br/univille/entity/Pessoa.class
+br/univille/App.class
+br/univille/Main.class
