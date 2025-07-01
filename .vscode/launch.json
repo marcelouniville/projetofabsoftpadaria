@@ -9,6 +9,16 @@
             "projectName": "projfabsoftpadaria",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjfabsoftpadariaApplication<projfabsoft>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.univille.projfabsoftpadaria.ProjfabsoftpadariaApplication",
+            "projectName": "projfabsoft",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

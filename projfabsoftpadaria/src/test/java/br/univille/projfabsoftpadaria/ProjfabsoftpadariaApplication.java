@@ -1,13 +1,13 @@
 package br.univille.projfabsoftpadaria;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootApplication
-public class ProjfabsoftpadariaApplication {
+@SpringBootTest
+class ProjfabsoftpadariaApplicationTests {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ProjfabsoftpadariaApplication.class, args);
-	}
-
+    @Test
+    void contextLoads() {
+        // Esse teste verifica se o contexto Spring Boot carrega sem erros.
+    }
 }

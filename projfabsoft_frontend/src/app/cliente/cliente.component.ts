@@ -3,11 +3,11 @@ import { Cliente } from '../model/cliente';
 import { ClienteService } from '../service/cliente.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cliente',
-  imports: [HttpClientModule, CommonModule, RouterModule],
+  imports: [HttpClientModule, CommonModule, RouterLink],
   templateUrl: './cliente.component.html',
   styleUrl: './cliente.component.css',
   providers: [ClienteService]
@@ -15,13 +15,13 @@ import { RouterModule } from '@angular/router';
 export class ClienteComponent {
   public listaClientes: Cliente[] = [];
   constructor(
-    private clientecomponentService:ClienteService
+    private clienteService:ClienteService
   ){}
   
 
 
   ngOnInit(): void {
-    this.clientecomponentService.getClientes().subscribe(resposta => {
+    this.clienteService.getClientes().subscribe(resposta => {
       this.listaClientes = resposta;
     })
 
