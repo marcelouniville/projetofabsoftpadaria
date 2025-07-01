@@ -1,7 +1,6 @@
 <main class="container">
     <h2>Clientes</h2>
-    <a [routerLink]="['/clientes/novo']" class="btn btn-primary">Novo</a>
-
+    <a (click)="novo()" class="btn btn-primary">Novo</a>
 <table class="table">
   <thead>
     <tr>
@@ -10,6 +9,7 @@
       <th>Telefone</th>
       <th>Endereco</th>
       <th>Data Nascimento</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -19,14 +19,8 @@
       <td>{{ umCliente.telefone }}</td>
       <td>{{ umCliente.endereco }}</td>
       <td>{{ umCliente.dataNascimento | date: 'dd/MM/yyyy' }}</td>
-      <td>
-        <a [routerLink]="['/cliente', umCliente.id]" class="btn btn-info btn-sm" style="margin-right: 4px;">
-          Editar
-        </a>
-        <a [routerLink]="['/cliente', umCliente.id, 'detalhe']" class="btn btn-secondary btn-sm">
-          Detalhes
-        </a>
-      </td>
+      <td><a (click)="alterar(umCliente)"
+         class="btn btn-secondary">Alterar</a></td>
     </tr>
   </tbody>
 </table>

@@ -7,22 +7,23 @@ import { Cliente } from '../model/cliente';
   providedIn: 'root'
 })
 export class ClienteService {
-  private apiUrl = 'http://localhost:8080/api/clientes'; // ajuste se necessário
+  private apiUrl = 'http://localhost:8080/api/v1/clientes'; 
 
-  constructor(private http: HttpClient) {}
+  constructor(private http:HttpClient) { }
 
-  // Método para buscar todos os clientes
-  getClientes(): Observable<Cliente[]> {
-    return this.http.get<Cliente[]>(this.apiUrl);
+  getClientes(){
+     return this.http.get<Cliente[]>(this.apiUrl);
   }
-
-  // Método para buscar um cliente pelo id
-  getClienteById(id: string): Observable<Cliente> {
-    return this.http.get<Cliente>(`${this.apiUrl}/${id}`);
+  saveCliente(cliente:Cliente){
+    if(cliente.id){
+      return this.http.put(this.apiUrl + '/' + cliente.id, cliente);
+    }
+    return this.http.post(this.apiUrl,cliente);
   }
-
-  // Método para salvar cliente
-  saveCliente(cliente: Cliente): Observable<any> {
-  return this.http.post(this.apiUrl, cliente);
-}
+  getClienteById(id: any) {
+    return this.http.get<Cliente>(this.apiUrl + '/' + id);
+  }
+  excluirCliente(id: any){
+    return this.http.delete<Cliente>(this.apiUrl + '/' + id);
+  }
 }
