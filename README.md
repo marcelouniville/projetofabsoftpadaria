@@ -39,7 +39,8 @@ Como dono da padaria,
 quero visualizar um relatório diário de vendas e lucro,
 para tomar decisões de compra e produção no dia seguinte.
 
-4. Cadastro de cliente, nome. endereço, telefone e email
+4. Cadastro de cliente, nome. endereço, telefone e e-mail
+
 
 
 
