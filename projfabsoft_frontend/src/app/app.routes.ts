@@ -6,5 +6,5 @@ export const routes: Routes = [
   
   { path: 'clientes', component: ClienteComponent },
   { path: 'clientes/novo', component: FormClienteComponent },
-  {path: 'clienmtes/alternar/:id', component: FormClienteComponent }
+  {path: 'clientes/alterar/:id', component: FormClienteComponent }
 ];

@@ -19,8 +19,9 @@
       <td>{{ umCliente.telefone }}</td>
       <td>{{ umCliente.endereco }}</td>
       <td>{{ umCliente.dataNascimento | date: 'dd/MM/yyyy' }}</td>
-      <td><a (click)="alterar(umCliente)"
-         class="btn btn-secondary">Alterar</a></td>
+      <td>
+        <a (click)="alterar(umCliente)"class="btn btn-secondary">Alterar</a>
+        </td>
     </tr>
   </tbody>
 </table>
