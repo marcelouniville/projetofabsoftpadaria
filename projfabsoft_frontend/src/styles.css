@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #fff4e6; /* bege clarinho, tema padaria */
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.25) 1px,
+    transparent 2px,
+    transparent 6px
+  );
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px 0;
+  color: #4b2e00; /* marrom escuro para texto */
+
+  /* Texto com sombra sutil para melhorar leitura */
+  text-shadow: 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.8);
+
+  /* Espaçamento para linhas mais confortável */
+  line-height: 1.6;
+
+  /* Suaviza a renderização das fontes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  input, textarea, select {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;           /* deixar o texto digitado um pouco mais forte */
+  font-size: 16px;            /* um pouco maior para melhor leitura */
+  color: #6b4c1a;             /* marrom escuro, combinando com padaria */
+  background-color: #fff8f0;  /* bege clarinho para o fundo do input */
+  border: 1.5px solid #d8a15e; /* borda dourada suave */
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #b5864a;      /* dourado mais forte no foco */
+  background-color: #fffaf1;  /* leve brilho no fundo */
+}
+
+}

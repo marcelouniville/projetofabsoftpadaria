@@ -1,0 +1,74 @@
+/* Fundo e borda da tabela */
+table {
+  width: 100%;
+  border-collapse: separate; /* importante para borda arredondada */
+  border-spacing: 0 8px; /* espaço entre linhas */
+  background-color: #fff8f0; /* bege claro, clareei um pouco para combinar com o padrão */
+  box-shadow: 0 4px 8px rgba(181, 135, 95, 0.2); /* sombra quente */
+  border-radius: 10px;
+  overflow: hidden;
+
+  /* Fundo com linhas diagonais sutis */
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      #f3e9d6,
+      #f3e9d6 2px,
+      #fff8f0 2px,
+      #fff8f0 10px
+    );
+}
+
+/* Cabeçalho */
+thead tr {
+  background-color: #d8a15e; /* tom dourado pão */
+  color: #4b2e00; /* marrom escuro */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Células do cabeçalho arredondadas */
+thead tr th:first-child {
+  border-top-left-radius: 10px;
+}
+
+thead tr th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Linhas do corpo */
+tbody tr {
+  background-color: #fff4e6; /* bege clarinho */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover nas linhas */
+tbody tr:hover {
+  background-color: #f1d6a7; /* tom amarelo suave */
+  cursor: pointer;
+}
+
+/* Células com borda inferior arredondada */
+tbody tr td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* Botões */
+button, a.btn {
+  background-color: #b5864a; /* tom marrom pão */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover, a.btn:hover {
+  background-color: #996f33;
+  text-decoration: none;
+  color: white;
+}

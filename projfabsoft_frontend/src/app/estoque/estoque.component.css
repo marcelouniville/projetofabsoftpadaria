@@ -1,13 +1,109 @@
+/* Container geral para dar espaçamento */
+.container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff4e6; /* bege clarinho */
+  min-height: 100vh;
+}
+
+/* Layout das colunas com espaçamento */
+.row {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cada card */
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(181, 135, 95, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 280px;
+  background-color: #fff8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* Hover leve para o card */
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(181, 135, 95, 0.4);
 }
 
-.card .card-header {
-  font-weight: bold;
-  font-size: 1.2rem;
+/* Header do card */
+.card-header {
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Cores específicas por tipo */
+.bg-warning {
+  background-color: #d7a858; /* tom dourado pão */
+}
+
+.bg-danger {
+  background-color: #c64e3f; /* vermelho bolo */
+}
+
+.bg-brown {
+  background-color: #6f4e37; /* marrom café */
+}
+
+/* Corpo do card */
+.card-body {
+  padding: 20px;
+  color: #4b2e00; /* marrom escuro texto */
+  font-size: 1rem;
+  min-height: 100px;
+}
+
+/* Footer com botão alinhado à direita */
+.card-footer {
+  padding: 12px 20px;
+  text-align: right;
+}
+
+/* Botões */
+.card-footer a.btn {
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.card-footer a.btn-outline-warning {
+  color: #d7a858;
+  border-color: #d7a858;
+}
+
+.card-footer a.btn-outline-warning:hover {
+  background-color: #d7a858;
+  color: #fff;
+}
+
+.card-footer a.btn-outline-danger {
+  color: #c64e3f;
+  border-color: #c64e3f;
+}
+
+.card-footer a.btn-outline-danger:hover {
+  background-color: #c64e3f;
+  color: #fff;
+}
+
+.card-footer a.btn-outline-dark {
+  color: #6f4e37;
+  border-color: #6f4e37;
+}
+
+.card-footer a.btn-outline-dark:hover {
+  background-color: #6f4e37;
+  color: #fff;
 }
