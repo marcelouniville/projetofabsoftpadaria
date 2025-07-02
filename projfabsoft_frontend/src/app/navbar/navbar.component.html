@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active">Padaria</a>
+
+    <!-- Botão para menu mobile -->
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Itens do menu -->
+    <div [class.show]="menuOpen" class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Clientes = Home -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Clientes</a>
+        </li>
+
+        <!-- Dropdown de Produtos -->
+        <li class="nav-item dropdown" [class.show]="produtosOpen" (mouseleave)="produtosOpen = false">
+          <a class="nav-link dropdown-toggle" href="#" role="button" (click)="toggleProdutos($event)" aria-expanded="false">
+            Produtos
+          </a>
+          <ul class="dropdown-menu" [class.show]="produtosOpen">
+            <li><a class="dropdown-item" routerLink="/produtos/pao" routerLinkActive="active">Pães</a></li>
+            <li><a class="dropdown-item" routerLink="/produtos/bolo" routerLinkActive="active">Bolos</a></li>
+            <li><a class="dropdown-item" routerLink="/produtos/cafe" routerLinkActive="active">Cafés</a></li>
+          </ul>
+        </li>
+
+        <!-- Estoque -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/estoque" routerLinkActive="active">Estoque</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
