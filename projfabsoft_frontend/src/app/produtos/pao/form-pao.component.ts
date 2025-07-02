@@ -14,10 +14,8 @@ import { FormsModule } from '@angular/forms';
 export class FormPaoComponent implements OnInit {
   pao: Produto = {
     nome: '',
-    descricao: '',
-    preco: 0,
     quantidadeEstoque: 0,
-    horario: ''
+    preco: 0
   };
   id: number | null = null;
 
@@ -31,13 +29,25 @@ export class FormPaoComponent implements OnInit {
     this.id = Number(this.route.snapshot.paramMap.get('id'));
     if (this.id) {
       this.produtoService.buscarPorId(this.id).subscribe(p => {
-        this.pao = p;
+        this.pao = {
+          nome: p.nome,
+          quantidadeEstoque: p.quantidadeEstoque,
+          preco: p.preco ?? 0,
+          id: p.id
+        };
       });
     }
   }
 
   salvar() {
-    this.produtoService.salvar(this.pao).subscribe(() => {
+    const paoParaSalvar: Produto = {
+      id: this.pao.id,
+      nome: this.pao.nome,
+      quantidadeEstoque: this.pao.quantidadeEstoque,
+      preco: this.pao.preco
+    };
+
+    this.produtoService.salvar(paoParaSalvar).subscribe(() => {
       alert('Pão salvo com sucesso!');
       this.router.navigate(['/produtos/pao']);
     });

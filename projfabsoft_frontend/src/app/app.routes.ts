@@ -62,5 +62,23 @@ export const routes: Routes = [
   {
     path: 'produtos/cafe/editar/:id',
     loadComponent: () => import('./produtos/cafe/form-cafe.component').then(m => m.FormCafeComponent)
+  },
+
+  // Rotas Estoque
+  {
+    path: 'estoque',
+    loadComponent: () => import('./estoque/estoque.component').then(m => m.EstoqueComponent)
+  },
+  {
+    path: 'estoque/pao',
+    loadComponent: () => import('./estoque/pao/estoque-pao.component').then(m => m.EstoquePaoComponent)
+  },
+  {
+    path: 'estoque/bolo',
+    loadComponent: () => import('./estoque/bolo/estoque-bolo.component').then(m => m.EstoqueBoloComponent)
+  },
+  {
+    path: 'estoque/cafe',
+    loadComponent: () => import('./estoque/cafe/estoque-cafe.component').then(m => m.EstoqueCafeComponent)
   }
 ];

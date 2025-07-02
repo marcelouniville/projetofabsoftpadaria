@@ -1,0 +1,13 @@
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card .card-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}

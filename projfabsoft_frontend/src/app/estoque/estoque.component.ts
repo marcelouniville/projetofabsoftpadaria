@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; // <--- IMPORTAR RouterModule
 
 @Component({
   selector: 'app-estoque',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule, RouterModule],  // <--- ADICIONAR RouterModule aqui
   templateUrl: './estoque.component.html',
-  styleUrl: './estoque.component.css'
+  styleUrls: ['./estoque.component.css']
 })
-export class EstoqueComponent {
+export class EstoqueComponent implements OnInit {
+  constructor() {}
 
+  ngOnInit(): void {}
 }

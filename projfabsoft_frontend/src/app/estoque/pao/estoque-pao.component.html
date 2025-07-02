@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <h3>Estoque de Pães</h3>
+
+  <div class="text-end mb-3">
+    <a routerLink="/produtos/pao/novo" class="btn btn-success">Incluir Pão</a>
+  </div>
+
+  <table class="table table-striped">
+    <thead class="table-warning">
+      <tr>
+        <th>Nome</th>
+        <th>Qtd Estoque</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pao of paes">
+        <td>{{ pao.nome }}</td>
+        <td>{{ pao.quantidadeEstoque }}</td>
+        <td>
+          <a [routerLink]="['/produtos/pao/editar', pao.id]" class="btn btn-sm btn-primary me-2">Editar</a>
+          <button (click)="excluir(pao)" class="btn btn-sm btn-danger">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

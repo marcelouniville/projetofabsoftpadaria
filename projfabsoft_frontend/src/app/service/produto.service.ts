@@ -5,10 +5,10 @@ import { Observable } from 'rxjs';
 export interface Produto {
   id?: number;
   nome: string;
-  descricao: string;
-  preco: number;
+  descricao?: string;      // deixou opcional
+  preco?: number;          // deixou opcional
   quantidadeEstoque: number;
-  horario: string;  // campo novo
+  horario?: string;        // deixou opcional
 }
 
 @Injectable({
