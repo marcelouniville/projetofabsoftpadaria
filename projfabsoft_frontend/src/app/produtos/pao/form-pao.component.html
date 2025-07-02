@@ -1,0 +1,49 @@
+<div class="container mt-4">
+  <h2>{{ id ? 'Editar Pão' : 'Cadastrar Pão' }}</h2>
+  <form (ngSubmit)="salvar()">
+    <div class="mb-3">
+      <label class="form-label">Nome</label>
+      <input [(ngModel)]="pao.nome" name="nome" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Descrição</label>
+      <input [(ngModel)]="pao.descricao" name="descricao" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Preço (R$)</label>
+      <input
+        type="number"
+        [(ngModel)]="pao.preco"
+        name="preco"
+        class="form-control"
+        step="0.01"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Quantidade em Estoque</label>
+      <input
+        type="number"
+        [(ngModel)]="pao.quantidadeEstoque"
+        name="quantidadeEstoque"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+  <label class="form-label">Horário</label>
+  <input
+    type="text"
+    [(ngModel)]="pao.horario"
+    name="horario"
+    class="form-control"
+    required
+  />
+</div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <button type="button" class="btn btn-secondary ms-2" (click)="cancelar()">
+      Cancelar
+    </button>
+  </form>
+</div>

@@ -1,1 +1,27 @@
-<p>bolo works!</p>
+<div class="container mt-4">
+  <h2>Bolos</h2>
+  <a class="btn btn-primary mb-3" routerLink="/produtos/bolo/novo">Cadastrar</a>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Preço (R$)</th>
+        <th>Quantidade em Estoque</th>
+        <th>Horário</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bolo of bolos">
+        <td>{{ bolo.nome }}</td>
+        <td>{{ bolo.preco | number:'1.2-2' }}</td>
+        <td>{{ bolo.quantidadeEstoque }}</td>
+        <td>{{ bolo.horario }}</td>
+        <td>
+          <a class="btn btn-sm btn-warning me-2" [routerLink]="['/produtos/bolo/editar', bolo.id]">Editar</a>
+          <button class="btn btn-sm btn-danger" (click)="excluir(bolo)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

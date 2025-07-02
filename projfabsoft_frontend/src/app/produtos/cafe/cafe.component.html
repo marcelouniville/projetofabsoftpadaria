@@ -1,1 +1,29 @@
-<p>cafe works!</p>
+<div class="container mt-4">
+  <h2>Cafés</h2>
+  <a class="btn btn-primary mb-3" routerLink="/produtos/cafe/novo">Cadastrar</a>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Preço (R$)</th>
+        <th>Quantidade em Estoque</th>
+        <th>Horário</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cafe of cafes">
+        <td>{{ cafe.nome }}</td>
+        <td>{{ cafe.descricao }}</td>
+        <td>{{ cafe.preco | number:'1.2-2' }}</td>
+        <td>{{ cafe.quantidadeEstoque }}</td>
+        <td>{{ cafe.horario }}</td>
+        <td>
+          <a class="btn btn-sm btn-warning me-2" [routerLink]="['/produtos/cafe/editar', cafe.id]">Editar</a>
+          <button class="btn btn-sm btn-danger" (click)="excluir(cafe)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

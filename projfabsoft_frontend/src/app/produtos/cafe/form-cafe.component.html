@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <h2>Cadastrar / Editar Café</h2>
+  <form (ngSubmit)="salvar()">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input [(ngModel)]="cafe.nome" name="nome" id="nome" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="descricao" class="form-label">Descrição</label>
+      <textarea [(ngModel)]="cafe.descricao" name="descricao" id="descricao" class="form-control" required></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="preco" class="form-label">Preço (R$)</label>
+      <input type="number" [(ngModel)]="cafe.preco" name="preco" id="preco" class="form-control" required min="0" step="0.01" />
+    </div>
+
+    <div class="mb-3">
+      <label for="quantidadeEstoque" class="form-label">Quantidade em Estoque</label>
+      <input type="number" [(ngModel)]="cafe.quantidadeEstoque" name="quantidadeEstoque" id="quantidadeEstoque" class="form-control" required min="0" />
+    </div>
+
+    <div class="mb-3">
+      <label for="horario" class="form-label">Horário</label>
+      <input [(ngModel)]="cafe.horario" name="horario" id="horario" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2">Salvar</button>
+    <button type="button" class="btn btn-secondary" (click)="cancelar()">Cancelar</button>
+  </form>
+</div>

@@ -1,1 +1,26 @@
-<p>pao works!</p>
+<div class="container mt-4">
+  <h2>Pães</h2>
+  <a class="btn btn-primary mb-3" routerLink="/produtos/pao/novo">Cadastrar</a>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Preço (R$)</th>
+        <th>Horário</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pao of paes">
+        <td>{{ pao.nome }}</td>
+        <td>{{ pao.preco | number:'1.2-2' }}</td>
+        <td>{{ pao.quantidadeEstoque }}</td>
+
+        <td>
+          <a class="btn btn-sm btn-warning me-2" [routerLink]="['/produtos/pao/editar', pao.id]">Editar</a>
+          <button class="btn btn-sm btn-danger" (click)="excluir(pao)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
