@@ -4,8 +4,8 @@ import br.univille.projfabsoftpadaria.entity.Produto;
 import java.util.List;
 
 public interface ProdutoService {
-    Produto save(Produto produto);
-    List<Produto> getAll();
-    Produto getById(long id);
-    boolean delete(long id);
+    List<Produto> listarTodos();
+    Produto salvar(Produto produto);
+    void deletar(long id);
+    Produto buscarPorId(long id);
 }

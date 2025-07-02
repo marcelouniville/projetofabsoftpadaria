@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  // Rotas Clientes
+  
   {
     path: 'clientes',
     loadComponent: () => import('./cliente/cliente.component').then(m => m.ClienteComponent)
@@ -15,14 +15,14 @@ export const routes: Routes = [
     loadComponent: () => import('./form-cliente/form-cliente.component').then(m => m.FormClienteComponent)
   },
 
-  // Redirecionamento padrão
+  
   {
     path: '',
     redirectTo: '/clientes',
     pathMatch: 'full'
   },
 
-  // Rotas Pão
+  
   {
     path: 'produtos/pao',
     loadComponent: () => import('./produtos/pao/pao.component').then(m => m.PaoComponent)
@@ -36,7 +36,7 @@ export const routes: Routes = [
     loadComponent: () => import('./produtos/pao/form-pao.component').then(m => m.FormPaoComponent)
   },
 
-  // Rotas Bolo
+  
   {
     path: 'produtos/bolo',
     loadComponent: () => import('./produtos/bolo/bolo.component').then(m => m.BoloComponent)
@@ -50,7 +50,7 @@ export const routes: Routes = [
     loadComponent: () => import('./produtos/bolo/form-bolo.component').then(m => m.FormBoloComponent)
   },
 
-  // Rotas Café
+  
   {
     path: 'produtos/cafe',
     loadComponent: () => import('./produtos/cafe/cafe.component').then(m => m.CafeComponent)
@@ -64,7 +64,7 @@ export const routes: Routes = [
     loadComponent: () => import('./produtos/cafe/form-cafe.component').then(m => m.FormCafeComponent)
   },
 
-  // Rotas Estoque
+  
   {
     path: 'estoque',
     loadComponent: () => import('./estoque/estoque.component').then(m => m.EstoqueComponent)

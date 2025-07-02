@@ -6,7 +6,7 @@
       <tr>
         <th>Tipo</th>
         <th>Preço (R$)</th>
-        <th>Qtd Estoque</th>  <!-- Troquei Horário por Quantidade -->
+        <th>Qtd Estoque</th>  
         <th>Ações</th>
       </tr>
     </thead>
@@ -14,7 +14,7 @@
       <tr *ngFor="let pao of paes">
         <td>{{ pao.nome }}</td>
         <td>{{ pao.preco | number:'1.2-2' }}</td>
-        <td>{{ pao.quantidadeEstoque }}</td>  <!-- Quantidade -->
+        <td>{{ pao.quantidadeEstoque }}</td>  
         <td>
           <a class="btn btn-sm btn-warning me-2" [routerLink]="['/produtos/pao/editar', pao.id]">Editar</a>
           <button class="btn btn-sm btn-danger" (click)="excluir(pao)">Excluir</button>

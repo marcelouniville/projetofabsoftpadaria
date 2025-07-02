@@ -16,19 +16,21 @@ public class Produto {
     private String descricao;
     private Double preco;
     private Integer quantidadeEstoque;
+    private String horario;  // Novo campo
 
-    // Construtores
+    
     public Produto() {}
 
-    public Produto(long id, String nome, String descricao, Double preco, Integer quantidadeEstoque) {
+    public Produto(long id, String nome, String descricao, Double preco, Integer quantidadeEstoque, String horario) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.quantidadeEstoque = quantidadeEstoque;
+        this.horario = horario;
     }
 
-    // Getters e Setters
+    
     public long getId() {
         return id;
     }
@@ -67,5 +69,13 @@ public class Produto {
 
     public void setQuantidadeEstoque(Integer quantidadeEstoque) {
         this.quantidadeEstoque = quantidadeEstoque;
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
     }
 }

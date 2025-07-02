@@ -1,4 +1,4 @@
-/* Container geral para dar espaçamento */
+
 .container {
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,7 +6,7 @@
   min-height: 100vh;
 }
 
-/* Layout das colunas com espaçamento */
+
 .row {
   gap: 20px;
   display: flex;
@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-/* Cada card */
+
 .card {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(181, 135, 95, 0.3);
@@ -26,13 +26,13 @@
   justify-content: space-between;
 }
 
-/* Hover leve para o card */
+
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(181, 135, 95, 0.4);
 }
 
-/* Header do card */
+
 .card-header {
   padding: 12px 20px;
   font-weight: 700;
@@ -42,34 +42,34 @@
   border-top-right-radius: 12px;
 }
 
-/* Cores específicas por tipo */
+
 .bg-warning {
-  background-color: #d7a858; /* tom dourado pão */
+  background-color: #d7a858; 
 }
 
 .bg-danger {
-  background-color: #c64e3f; /* vermelho bolo */
+  background-color: #c64e3f; 
 }
 
 .bg-brown {
-  background-color: #6f4e37; /* marrom café */
+  background-color: #6f4e37; 
 }
 
-/* Corpo do card */
+
 .card-body {
   padding: 20px;
-  color: #4b2e00; /* marrom escuro texto */
+  color: #4b2e00; 
   font-size: 1rem;
   min-height: 100px;
 }
 
-/* Footer com botão alinhado à direita */
+
 .card-footer {
   padding: 12px 20px;
   text-align: right;
 }
 
-/* Botões */
+
 .card-footer a.btn {
   font-weight: 600;
   padding: 8px 16px;

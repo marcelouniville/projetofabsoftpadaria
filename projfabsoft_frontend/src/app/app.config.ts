@@ -8,7 +8,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    importProvidersFrom(HttpClientModule), // ✅ necessário para habilitar HttpClient nos serviços
+    importProvidersFrom(HttpClientModule), // 
     provideRouter(routes)
   ]
 };

@@ -1,28 +1,28 @@
-/* cliente.component.css */
 
-/* Container geral */
+
+
 main.container {
   margin-top: 30px;
-  background-color: #fff8f0; /* fundo bege claro, lembrando pão e forno */
+  background-color: #fff8f0; 
   padding: 25px 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(165, 105, 45, 0.3); /* sombra quente marrom clara */
+  box-shadow: 0 4px 12px rgba(165, 105, 45, 0.3); 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Título */
+
 main.container h2 {
   margin-bottom: 25px;
-  color: #8b4513; /* marrom escuro, tipo crosta de pão */
+  color: #8b4513; 
   font-weight: 700;
   font-size: 2.2rem;
-  text-shadow: 1px 1px 2px #c6a664; /* leve brilho amarelo para destacar */
+  text-shadow: 1px 1px 2px #c6a664; 
 }
 
-/* Botão Novo com margem inferior */
+
 main.container > .btn-primary {
   margin-bottom: 18px;
-  background-color: #d2691e; /* chocolate / caramelo */
+  background-color: #d2691e; 
   border: none;
   font-weight: 600;
   padding: 10px 22px;
@@ -31,35 +31,35 @@ main.container > .btn-primary {
 }
 
 main.container > .btn-primary:hover {
-  background-color: #a0522d; /* tom mais escuro de caramelo */
+  background-color: #a0522d; 
 }
 
-/* Estilo da tabela */
+
 table.table {
-  background-color: #fff3e6; /* bege bem claro, parecendo farinha ou massa */
+  background-color: #fff3e6; 
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 8px rgba(160, 82, 45, 0.25);
 }
 
-/* Cabeçalho da tabela */
+
 table.table thead tr {
-  background-color: #8b4513; /* crosta do pão */
+  background-color: #8b4513; 
   color: #fff9f0;
   font-weight: 700;
   font-size: 1.1rem;
   letter-spacing: 0.05em;
 }
 
-/* Linhas da tabela */
+
 table.table tbody tr:hover {
-  background-color: #f5deb3; /* trigo, tom suave */
+  background-color: #f5deb3; 
   cursor: pointer;
 }
 
-/* Botões Alterar e Excluir */
+
 .btn-secondary {
-  background-color: #deb887; /* bege médio, estilo massa de pão */
+  background-color: #deb887; 
   border: none;
   color: #5a3310;
   font-weight: 600;
@@ -73,7 +73,7 @@ table.table tbody tr:hover {
 }
 
 .btn-danger {
-  background-color: #b22222; /* vermelho queimado, tipo forno quente */
+  background-color: #b22222; 
   border: none;
   color: #fff9f0;
   font-weight: 700;
@@ -85,7 +85,7 @@ table.table tbody tr:hover {
   background-color: #7a1616;
 }
 
-/* Modal */
+
 .modal-content {
   border-radius: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
